@@ -33,14 +33,14 @@ def extract_prices(html):
         return campground_name, parent_tags, prices
     except AttributeError as e: 
         print(f"Error: {e}")
-        raise SystemExit
+        return "Unknown campground", [], []
 
 def main(): 
     args = parser().parse_args()
     html = fetch(args.location)
     name, tag, price = extract_prices(html)
     if args.prices or not args.tags:
-        for item in price: 
+        for item in price:
             print(item)
     if args.tags:
         print(f"Campground name: {name}")
