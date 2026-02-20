@@ -2,9 +2,25 @@ A Python script that looks for prices at KOA.com locations.
 
 # Quick start: 
 ## Install Requirements: 
-### pip install -m re, requests, bs4, argparse
+```bash
+pip install -r requirements.txt
+```
+
+Or manually:
+```bash
+pip install requests beautifulsoup4
+```
 
 ### Example usage: 
-### python3 koa_scraper.py --location moab --price --tags
+
+Show just prices:
+```bash
+python3 koa_scraper.py --location moab --prices
+```
+
+Show full tags:
+```bash
+python3 koa_scraper.py --location moab --tags
+```
 
 

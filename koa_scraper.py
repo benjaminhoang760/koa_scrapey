@@ -39,7 +39,7 @@ def main():
     args = parser().parse_args()
     html = fetch(args.location)
     name, tag, price = extract_prices(html)
-    if args.prices: 
+    if args.prices or not args.tags:
         for item in price: 
             print(item)
     if args.tags:
