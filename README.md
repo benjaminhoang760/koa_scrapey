@@ -3,24 +3,24 @@ A fun project I built that uses a Python script to look for prices at KOA.com lo
 # Quick start
 ## Install Requirements
 ```
-python3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 Or manually:
 ```
-python3 install requests beautifulsoup4
+pip3 install requests beautifulsoup4
 ```
 
 ### Example usage: 
 
 Show just prices:
 ```
-python3 koa_scraper.py --location moab --prices
+pip3 koa_scraper.py --location moab --prices
 ```
 
 Show full tags:
 ```
-python3 koa_scraper.py --location moab --tags
+pip3 koa_scraper.py --location moab --tags
 ```
 
 ## What I learned
@@ -30,5 +30,11 @@ python3 koa_scraper.py --location moab --tags
 - Learned how to use regex 
 
 
+## Limitations
+- Only scrapes using HTML 
+- Landing page only 
+- Does not include actual listings and mostly promotions
+- Inclues prices that are not campgrounds
+- Does not sort or remove duplicaties
 
 
