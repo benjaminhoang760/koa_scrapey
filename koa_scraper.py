@@ -16,16 +16,21 @@ def fetch(location):
         return r.text
     except requests.RequestException as e: 
         print(f"Error {e}")
+        return None
 
 def extract_prices(html): 
-    soup = BeautifulSoup(str(html), 'html.parser')
-    dollar_tags = soup.find_all(string=lambda text: '$' in text)
-    campground_name = soup.find('h1').text
-    parent_tags = []
-    for item in dollar_tags: 
-        if re.findall(r"\$\d+(?:\.\d{2})?", str(item)):
-            parent_tags.append(item)
-    return campground_name, parent_tags
+    try: 
+        soup = BeautifulSoup(str(html), 'html.parser')
+        dollar_tags = soup.find_all(string=lambda text: '$' in text)
+        campground_name = soup.find('h1').text
+        parent_tags = []
+        for item in dollar_tags: 
+            if re.findall(r"\$\d+(?:\.\d{2})?", str(item)):
+                parent_tags.append(item)
+        return campground_name, parent_tags
+    except AttributeError as e: 
+        print(f"Error: {e}")
+        raise SystemExit
 
 def main(): 
     args = parser().parse_args()
