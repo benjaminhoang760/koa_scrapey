@@ -1,0 +1,3 @@
+Campground: Zion National Park KOA Holiday
+Tags: ['\r\n\t\t\t\t\t\t\tWasher & Dryer cost at $4 each was crazy! We usually stay at KOAs and they’re usually 1.25-1.75. Currently at the Palm Springs KOA and that’s there cost. Other than that, it’s a nice area. We stayed end of November and it was empty. Good time to visit Zion National Park. ']
+Prices: ['$4']
