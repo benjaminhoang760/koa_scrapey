@@ -35,10 +35,6 @@ def extract_prices(html):
     except AttributeError as e: 
         print(f"Error: {e}")
         return "Unknown campground", [], []
-    
-def save_file(path, data): 
-    with open(path, 'w') as file: 
-        file.write(data)
 
 def main(): 
     args = parser().parse_args()
