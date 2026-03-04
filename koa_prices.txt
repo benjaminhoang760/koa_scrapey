@@ -1,0 +1,3 @@
+Campground: Moab KOA Holiday
+Tags: ['Grab a shirt in the general store for $15 and tie-dye away!March 24thMarch 31stApril 7thApril 14thApril 21stApril 28thMay 5th - Cinco De Mayo!May 12thMay 19thMay 26thMore to...']
+Prices: ['$15']

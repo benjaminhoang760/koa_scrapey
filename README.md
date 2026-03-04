@@ -20,7 +20,7 @@ pip3 koa_scraper.py --location moab --prices
 
 Show full tags:
 ```
-pip3 koa_scraper.py --location moab --tags
+pip3 koa_scraper.py --location moab --tags --save
 ```
 
 ## What I learned
