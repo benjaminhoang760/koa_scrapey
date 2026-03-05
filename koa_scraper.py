@@ -11,7 +11,7 @@ def parser():
 
 def fetch(location): 
     url = f"https://koa.com/campgrounds/{location}/"
-    headers = {'User-Agent': "benhoang"}
+    headers = {'User-Agent': "bh-learning"}
     print(f'...Fetching lowest prices on {url}')
     try: 
         r = requests.get(url, headers=headers,timeout=10)
