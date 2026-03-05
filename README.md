@@ -1,4 +1,4 @@
-A fun project I built that uses a Python script to look for prices at KOA.com locations. 
+A fun project I built that uses a Python script to look for prices at KOA.com locations!
 
 # Quick start
 ## Install Requirements
